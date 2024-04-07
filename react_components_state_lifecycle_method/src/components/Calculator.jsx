@@ -17,7 +17,6 @@ function Calculator() {
 
     const handlePlus = () => {
         setResult(parseInt(value1) + parseInt(value2))
-        console.log(result)
     }
 
     const handleMinus = () => {
@@ -35,8 +34,8 @@ function Calculator() {
     return (
         < div className="App">
             <form action="#" style={{ width: "400px", padding: "10px", border: "1px solid" }}>
-                <input className='form-control' type="number" name="num1" onChange={handleChange1} value={value1} /><br />
-                <input className='form-control' type="number" name="num2" onChange={handleChange2} value={value2} /><br />
+                <input className='form-control' type="number"  onChange={handleChange1} value={value1} /><br />
+                <input className='form-control' type="number"  onChange={handleChange2} value={value2} /><br />
                 <p className='form-control' ><b>Kết quả: </b> {result}</p> <br />
                 <div className='d-flex justify-content-between align-items-center'>
                     <button onClick={handlePlus} className="btn btn-outline-primary">+</button>

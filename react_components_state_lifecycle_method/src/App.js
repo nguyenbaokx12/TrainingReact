@@ -1,6 +1,7 @@
 import './App.css';
 import Alert from './components/Alert';
 import Calculator from './components/Calculator';
+import LoginLogout from './components/LoginLogout';
 
 function App() {
   return (
@@ -17,6 +18,13 @@ function App() {
           [Bài tập] Xây dựng ứng dụng máy tính đơn giản
         </h1>
         <Calculator />
+      </div>
+
+      <div>
+        <h1>
+          [Bài tập] Xử lý sự kiện Login/Logout với form đăng nhập bằng Bootstrap
+          <LoginLogout />
+        </h1>
       </div>
 
     </div>
